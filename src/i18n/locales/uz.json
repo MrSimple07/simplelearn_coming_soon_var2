@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title": "🚀 AI bilan ",
+    "subtitle": "Oson O'rganing",
+    "description": "DTM va IELTS uchun AI yordamida tayyorlangan konspektlar, imtihonga tayyorgarlik va testlar—o'zbek, rus yoki ingliz tilida samaraliroq o'rganing!"
+  },
+  "features": {
+    "title": "Asosiy xususiyatlar",
+    "description": "Bizning AI platformamiz tezroq va osonroq o'rganishga yordam beradi",
+    "items": {
+      "summarization": {
+        "title": "AI konspektlar",
+        "description": "PDF, video va podkastlarni qisqa, tushunarli konspektlarga aylantiring"
+      },
+      "examPrep": {
+        "title": "Imtihonga tayyorgarlik",
+        "description": "DTM va IELTS testlari bilan shug'ullaning"
+      },
+      "studyPlans": {
+        "title": "O'quv rejasi",
+        "description": "Maqsadlaringizga asoslangan shaxsiy jadval oling"
+      },
+      "quizzes": {
+        "title": "Aqlli testlar",
+        "description": "O'quv materiallaringizdan AI yaratgan testlar bilan shug'ullaning"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan",
+    "developedBy": "Ilova yaratuvchisi",
+    "links": {
+      "terms": "Foydalanish shartlari",
+      "privacy": "Maxfiylik siyosati",
+      "about": "Biz haqimizda",
+      "contact": "Aloqa"
+    }
+  }
+}

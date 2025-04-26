@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title": "🚀 Boost Your Learning",
+    "subtitle": "with AI",
+    "description": "AI-powered summaries, exam prep, and quizzes for DTM & IELTS—study smarter in Uzbek, Russian, or English!"
+  },
+  "features": {
+    "title": "Key Features",
+    "description": "Our AI-powered platform helps you study more efficiently and effectively",
+    "items": {
+      "summarization": {
+        "title": "AI Summarization",
+        "description": "Convert PDFs, videos, and podcasts into concise, easy-to-understand summaries"
+      },
+      "examPrep": {
+        "title": "Exam Prep",
+        "description": "Practice with DTM & IELTS mock tests and quizzes tailored to your needs"
+      },
+      "studyPlans": {
+        "title": "AI Study Plans",
+        "description": "Get personalized study schedules based on your goals and learning pace"
+      },
+      "quizzes": {
+        "title": "Smart Quizzes",
+        "description": "Practice with AI-generated quizzes from your study materials"
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "developedBy": "Developed by",
+    "links": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "about": "About Us",
+      "contact": "Contact"
+    }
+  }
+}
