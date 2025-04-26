@@ -144,17 +144,21 @@ const HeroSection: React.FC = () => {
                     We already have your email in our waitlist.
                   </p>
                   <div className="space-y-4 max-w-md mx-auto">
-                    <motion.a
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      href="https://t.me/Muslimbek_01"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block w-full py-3 px-6 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 group"
+                    <Button
+                      variant="outline"
+                      className="w-full group hover:bg-foreground/5 dark:hover:bg-foreground/5 hover:shadow-lg hover:shadow-blue-500/20"
+                      onClick={() => window.open('https://t.me/Muslimbek_01', '_blank')}
                     >
-                      <Users className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                      <span className="font-medium">Join our Telegram Channel</span>
-                    </motion.a>
+                      <svg 
+                        className="w-4 h-4 mr-2 text-blue-500 group-hover:text-blue-600 dark:text-blue-400 dark:group-hover:text-blue-300 transition-colors duration-300" 
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.05-.2-.06-.06-.16-.04-.23-.02-.1.03-1.74 1.11-4.95 3.24-.47.32-.89.48-1.27.47-.42-.01-1.22-.24-1.82-.43-.73-.24-1.32-.36-1.27-.77.03-.21.32-.43.89-.66 3.48-1.51 5.8-2.51 6.97-2.99 3.32-1.35 4-.59 3.37.62z"/>
+                      </svg>
+                      Join Our Telegram Channel for Updates
+                    </Button>
                     <motion.button 
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
@@ -297,7 +301,7 @@ const HeroSection: React.FC = () => {
                       >
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.05-.2-.06-.06-.16-.04-.23-.02-.1.03-1.74 1.11-4.95 3.24-.47.32-.89.48-1.27.47-.42-.01-1.22-.24-1.82-.43-.73-.24-1.32-.36-1.27-.77.03-.21.32-.43.89-.66 3.48-1.51 5.8-2.51 6.97-2.99 3.32-1.35 4-.59 3.37.62z"/>
                       </svg>
-                      Join Telegram Channel
+                      Join Our Telegram Channel for Updates
                     </Button>
                     <Button 
                       variant="outline"

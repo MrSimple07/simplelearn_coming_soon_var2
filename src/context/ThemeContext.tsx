@@ -15,6 +15,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     return (savedTheme as Theme) || 'dark';
   });
 
+  // Apply theme immediately on mount
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+  }, []);
+
   useEffect(() => {
     localStorage.setItem('theme', theme);
     document.documentElement.classList.toggle('dark', theme === 'dark');
