@@ -7,6 +7,7 @@ import StripeCheckout from './StripeCheckout';
 import Button from './Button';
 import { saveToWaitlist } from '../services/supabase';
 import { useLanguage } from '../contexts/LanguageContext';
+import logo from '../assets/logo.png';
 
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
@@ -87,7 +88,7 @@ const HeroSection: React.FC = () => {
               transition={{ duration: 0.5 }}
               className="mb-4 inline-flex items-center bg-background/80 border border-border px-4 py-2 rounded-full shadow-sm backdrop-blur-sm hover:shadow-md transition-shadow"
             >
-              <RocketIcon className="w-4 h-4 text-blue-600 dark:text-blue-400 mr-2" />
+              <img src={logo} alt="SimpleLearn Logo" className="w-6 h-6 mr-2" />
               <span className="text-sm font-medium">Currently in pre-release</span>
             </motion.div>
             
