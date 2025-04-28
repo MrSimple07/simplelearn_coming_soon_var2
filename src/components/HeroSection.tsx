@@ -85,10 +85,10 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="mb-4 inline-flex items-center bg-background/80 border border-border px-4 py-2 rounded-full shadow-sm backdrop-blur-sm hover:shadow-md transition-shadow"
+              className="mb-4 inline-flex items-center bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10 px-4 py-2 rounded-full shadow-sm backdrop-blur-sm hover:shadow-md transition-shadow"
             >
               <img src="/logo.png" alt="SimpleLearn Logo" className="w-6 h-6 mr-2" />
-              <span className="text-sm font-medium">Currently in pre-release</span>
+              <span className="text-sm font-medium text-gray-900 dark:text-white">Currently in pre-release</span>
             </motion.div>
             
             <motion.h1 

@@ -11,18 +11,33 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
+    // Check if theme is stored in localStorage
     const savedTheme = localStorage.getItem('theme');
-    return (savedTheme as Theme) || 'dark';
+    if (savedTheme) {
+      return savedTheme as Theme;
+    }
+    // If no theme is stored, set dark as default
+    localStorage.setItem('theme', 'dark');
+    return 'dark';
   });
 
   // Apply theme immediately on mount
   useEffect(() => {
+    // Force dark theme on initial load
     document.documentElement.classList.add('dark');
+    document.documentElement.classList.remove('light');
   }, []);
 
+  // Update theme when it changes
   useEffect(() => {
     localStorage.setItem('theme', theme);
-    document.documentElement.classList.toggle('dark', theme === 'dark');
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+    } else {
+      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
+    }
   }, [theme]);
 
   const toggleTheme = () => {
